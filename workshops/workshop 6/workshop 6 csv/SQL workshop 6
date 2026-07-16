@@ -1,0 +1,72 @@
+-- 1. Count books in each genre
+SELECT
+    g.genre_name,
+    COUNT(b.book_id) AS number_of_books
+FROM genres g
+LEFT JOIN books b
+    ON g.genre_id = b.genre_id
+GROUP BY g.genre_name;
+
+-- 2. Average, minimum, and maximum loan duration by branch
+SELECT
+    br.branch_name,
+    AVG(julianday(l.return_date) - julianday(l.checkout_date)) AS avg_loan_days,
+    MIN(julianday(l.return_date) - julianday(l.checkout_date)) AS min_loan_days,
+    MAX(julianday(l.return_date) - julianday(l.checkout_date)) AS max_loan_days
+FROM loans l
+JOIN branches br
+    ON l.branch_id = br.branch_id
+WHERE l.return_date IS NOT NULL
+GROUP BY br.branch_name;
+
+-- 1 Discussion questions
+CREATE TABLE branch_inventory (
+    branch_id INTEGER,
+    book_id INTEGER,
+    copies_owned INTEGER,
+    copies_available INTEGER,
+    PRIMARY KEY (branch_id, book_id),
+    FOREIGN KEY (branch_id) REFERENCES branches(branch_id),
+    FOREIGN KEY (book_id) REFERENCES books(book_id)
+);
+
+--3. Discussion question
+CREATE TABLE reservation (
+    reservation_id INTEGER PRIMARY KEY,
+    patron_id INTEGER,
+    book_id INTEGER,
+    reservation_date DATE,
+    status VARCHAR
+);
+
+CREATE TABLE late_fees (
+    fee_id INTEGER PRIMARY KEY,
+    loan_id INTEGER,
+    amount REAL,
+    
+--4 Discussion querstion
+SELECT
+    title,
+    publication_year,
+    copies_owned
+FROM books
+WHERE publication_year ? 2000
+    AND copies_owned > 5
+    AND title LIKE '%History%'
+ORDER BY publication_year DESC;
+    paid_status VARCHAR
+);
+
+CREATE TABLE programs (
+    program__id INTEGER PRIMARY KEY,
+    program_name VARCHAR,
+    branch_id INTEGER,
+    program_date DATE
+);
+
+CREATE TABLE program_attendance (
+    attendance_id INTEGER PRIMARY KEY,
+    program_id INTEGER,
+    patron_id INTEGER
+);
+    

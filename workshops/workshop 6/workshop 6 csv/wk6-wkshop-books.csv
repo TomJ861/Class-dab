@@ -1,0 +1,21 @@
+book_id,title,author_id,genre_id,isbn,publication_year,copies_owned
+1001,Pride and Prejudice,1,1,9.78014E+12,1813,5
+1002,1984,2,3,9.78045E+12,1949,8
+1003,Beloved,3,1,9.7814E+12,1987,3
+1004,One Hundred Years of Solitude,4,1,9.78006E+12,1967,4
+1005,Murder on the Orient Express,5,4,9.78006E+12,1934,6
+1006,A Brief History of Time,6,2,9.78055E+12,1988,5
+1007,Sapiens: A Brief History of Humankind,7,2,9.78006E+12,2011,7
+1008,Death on the Nile,5,4,9.78006E+12,1937,4
+1009,Animal Farm,2,1,9.78045E+12,1945,6
+1010,Homo Deus: A Brief History of Tomorrow,7,2,9.78006E+12,2015,4
+1011,Harry Potter and the Philosopher's Stone,8,5,9.78075E+12,1997,10
+1012,The Old Man and the Sea,9,1,9.78068E+12,1952,6
+1013,To the Lighthouse,10,1,9.78016E+12,1927,3
+1014,War and Peace,11,1,9.7814E+12,1869,4
+1015,Americanah,12,1,9.78031E+12,2013,5
+1016,And Then There Were None,5,4,9.78006E+12,1939,7
+1017,The Theory of Everything,6,2,9.78055E+12,2002,3
+1018,Neverwhere,13,5,9.78006E+12,1996,6
+1019,I Know Why the Caged Bird Sings,14,6,9.78035E+12,1969,5
+1020,21 Lessons for the 21st Century,7,2,9.78053E+12,2018,8

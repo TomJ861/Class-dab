@@ -1,0 +1,46 @@
+{
+  "messages": [
+    {
+      "id": "3d3872d0-0c57-46ed-ac2d-99c6b00849e3",
+      "raw_time": false,
+      "time": 1780742820.6073537,
+      "sender": "105908ebf1bd4d02a019e52eefa23e96",
+      "type": "msg",
+      "body": "Write a function that calculates the final price after applying a discount"
+    },
+    {
+      "raw_time": false,
+      "type": "msg",
+      "sender": "jupyter-ai-personas::jupyter_ai_jupyternaut::JupyternautPersona",
+      "id": "6f88d427-b37e-4827-9048-c0529dc526c7",
+      "time": 1780742822.7797377,
+      "mentions": [],
+      "body": "Error: litellm.NotFoundError: OpenAIException - The model `gpt-40-mini` does not exist or you do not have access to it."
+    }
+  ],
+  "users": {
+    "jupyter-ai-personas::jupyter_ai_jupyternaut::JupyternautPersona": {
+      "username": "jupyter-ai-personas::jupyter_ai_jupyternaut::JupyternautPersona",
+      "color": null,
+      "display_name": "Jupyternaut",
+      "name": "Jupyternaut",
+      "bot": true,
+      "initials": null,
+      "avatar_url": "/api/ai/avatars/jupyter-ai-personas%3A%3Ajupyter_ai_jupyternaut%3A%3AJupyternautPersona"
+    },
+    "105908ebf1bd4d02a019e52eefa23e96": {
+      "name": "Anonymous Kallichore",
+      "avatar_url": null,
+      "username": "105908ebf1bd4d02a019e52eefa23e96",
+      "display_name": "Anonymous Kallichore",
+      "initials": "AK",
+      "color": "var(--jp-collaborator-color1)",
+      "mention_name": "Anonymous-Kallichore",
+      "bot": false
+    }
+  },
+  "attachments": {},
+  "metadata": {
+    "id": "eea5b390-0c5f-41a3-9fea-eeff02a62dbf"
+  }
+}

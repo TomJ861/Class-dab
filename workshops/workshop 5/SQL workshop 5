@@ -1,0 +1,10 @@
+SELECT title, popularity_score
+FROM songs
+WHERE popularity_score > 90
+ORDER BY popularity_score DESC;
+
+
+
+
+
+ 
